@@ -39,6 +39,18 @@ for field in dropDown:
     options[count].click()
 
 
+candidate_name = driver.find_element(By.XPATH,"//input[@placeholder = 'Type for hints...']")
+candidate_name.send_keys("John  Doe")
+
+
+date_of_application_from = driver.find_element(By.XPATH,"//input[@placeholder = 'From']")
+date_of_application_from.send_keys("2024-08-14")
+
+date_of_application_to = driver.find_element(By.XPATH,"//input[@placeholder = 'To']")
+date_of_application_to.send_keys("2024-08-20")
+
+search_button = driver.find_element(By.XPATH,"//button[text() = ' Search ']")
+search_button.click()
 
 
 
